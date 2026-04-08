@@ -1,0 +1,135 @@
+/* @import url(high-header.css);
+@import url(high-section1.css);
+@import url(high-section2.css);
+@import url(high-section3.css);
+@import url(high-btwSection.css);
+@import url(high-footer.css); */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(to bottom, #000000b6, #00000050), url(wow-hexa.jpg);
+}
+
+.section{
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: monospace;
+    color: antiquewhite;
+    width: 100%;
+}
+ #section-3{
+    padding: 30px 10px;
+    margin: 0;
+ }
+
+.myProjects{
+    background: linear-gradient(to bottom, #000, transparent);
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.myProjects h2{
+    text-align: center;
+    font-size: clamp(32px, 8vw, 56px);
+    margin-bottom: 10px;
+    color: #ffd;
+}
+.myProjects h3{
+    margin-bottom: 20px;
+    color: #ccc;
+}
+.myProjects p{
+    color: #ccc;
+}
+.project{
+    display: flex;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+.project img{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.project:hover img{
+    transform: translate(100px, -50px) scale(2);
+    cursor: pointer;
+    
+}
+
+/* phone responsive */
+ @media (max-width: 800px){
+    /* main header */
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    header a{
+        font-size: 16px;
+    }
+    #help, #home{
+        display: none;
+
+    }
+
+    /* sections */
+    .section{
+        overflow: auto;
+    }
+
+    /* section 3 <the divs in the about section> */
+    #section-3 .creative{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #section-3 .outside-life{
+        grid-template-columns: 1fr;
+    }
+
+    /* footer */
+    .contacts-wrapper{
+        flex-direction: column;
+    }
+    .useful-links h3{
+        text-align: center;
+    }
+    .useful-links ul{
+        flex-direction: row;
+    }
+    
+ 
+}
+@media (max-width:600px ){
+    #section-1 .profile p:first-child{
+        display: none;
+    }
+
+}
+ @media (max-width: 360px){
+    #section-1 .profile p{
+        display: none;
+    }
+    .experience{
+        display: none;
+    }
+}
+@media (max-width:320px){
+    #myself{
+        display: none;
+    }
+}
