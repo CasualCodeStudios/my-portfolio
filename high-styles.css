@@ -58,17 +58,21 @@ body{
     gap: 20px;
     transition: all 0.3s ease;
 }
-.project img{
+.projectImg{
     width: 200px;
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
     transition: all 0.3s ease;
 }
-.project:hover img{
+.project p:hover .projectImg{
     transform: translate(100px, -50px) scale(2);
     cursor: pointer;
     
+}
+.projectLink img{
+    width: 30px;
+    height: 30px;
 }
 
 /* phone responsive */
