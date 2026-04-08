@@ -72,16 +72,17 @@ body{
     border-radius: 10px;
     transition: all 0.3s ease;
 }
-.project p:hover .projectImg{
+.projectText p:hover .projectImg{
     transform: translate(100px, -50px) scale(2);
     cursor: pointer;
     
 }
 .projectLink{
+    width: fit-content;
     display: flex;
     gap: 10px;
-    justify-content: center;
     align-items: center;
+    padding: 4px 0;
 }
 .projectLink img{
     width: 30px;
