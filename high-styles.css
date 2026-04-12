@@ -54,6 +54,8 @@ body{
 }
 .projectText span{
     color: red;
+    text-align: center;
+    padding: 20px 30px;
     animation: error 3s ease-in-out infinite;
 }
 @keyframes error {
