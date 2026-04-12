@@ -48,10 +48,12 @@ body{
 }
 .myProjects h3{
     margin-bottom: 20px;
+    font-size: 1.5em;
     color: #ccc;
     text-decoration: underline;
 }
 .myProjects p{
+    font-size: 1.1em;
     color: #ccc;
 }
 .projects{
