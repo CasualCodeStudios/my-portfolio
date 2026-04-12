@@ -144,6 +144,9 @@ body{
     #section-1 .profile p:first-child{
         display: none;
     }
+    .project{
+        flex-direction: column;
+    }
 
 }
  @media (max-width: 360px){
