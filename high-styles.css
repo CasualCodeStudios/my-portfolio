@@ -54,14 +54,17 @@ body{
 }
 .myProjects span{
     color: red;
-    animation: error 3s infinite;
+    animation: error 3s ease-in-out infinite;
 }
 @keyframes error {
     0%{
         tranform: scale(1);
     }
-    100%{
+    50%{
         tranform: scale(1.2);
+    }
+    100%{
+        tranform: scale(1);
     }
 }
 .myProjects p{
