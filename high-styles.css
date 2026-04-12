@@ -47,10 +47,22 @@ body{
     color: #ffd;
 }
 .myProjects h3{
-    margin-bottom: 20px;
+    padding: 20px 10px;
     font-size: 1.5em;
     color: #ccc;
     text-decoration: underline;
+}
+.myProjects span{
+    color: red;
+    animation: error 3s infinite;
+}
+@keyframes error {
+    0%{
+        tranform: scale(1);
+    }
+    100%{
+        tranform: scale(1.2);
+    }
 }
 .myProjects p{
     font-size: 1.1em;
