@@ -52,7 +52,7 @@ body{
     color: #ccc;
     text-decoration: underline;
 }
-.myProjects span{
+.projectText span{
     color: red;
     animation: error 3s ease-in-out infinite;
 }
