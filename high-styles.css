@@ -40,6 +40,10 @@ body{
     gap: 20px;
     padding: 20px;
 }
+.myP{
+    text-align: center;
+    font-size: 18px;
+}
 .myProjects h2{
     text-align: center;
     font-size: clamp(32px, 8vw, 56px);
